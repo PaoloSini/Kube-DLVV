@@ -32,3 +32,51 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 ```
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 ```
+
+# Apply namespace
+
+```sh
+kubectl apply -f manifests/namespace.yaml
+```
+
+# Apply pod
+
+```sh
+kubectl apply -f manifests/pod.yaml
+```
+
+# Delete pod
+
+```sh
+kubectl delete -f manifests/pod.yaml
+```
+
+# Apply Deployment
+
+```sh
+kubectl apply -f manifests/deployment.yaml
+```
+
+# Apply Service
+
+```sh
+kubectl apply -f manifests/service.yaml
+```
+
+# Apply Ingress
+
+```sh
+kubectl apply -f manifests/ingress.yaml
+```
+
+# Apply Configmap
+
+```sh
+kubectl apply -f manifests/configmap.yaml
+```
+
+# Apply Deployment with HTML mounted
+
+```sh
+kubectl apply -f manifests/deployment-with-html.yaml
+```
